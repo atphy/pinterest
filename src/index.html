@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twinterest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
+</head>
+<body>
+  <div class="nav">
+      <img class="navLogo" src="assets/TwinterestLogo.png">
+      <div class="selectedBoard nav">
+        <h3 class="selectedBoardTitle">Test1</h3>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Test1</a></li>
+            <li><a href="#">Test2</a></li>
+            <li><a href="#">Test3</a></li>
+          </ul>
+        </div>
+    </div>
+      <div class="acctButtonBox">
+        <div><button class="acctButton">Sign In</button></div>
+      </div>
+  </div>
+  <div class="noUser main hidden">
+      <img class="noUserImg" src="./assets/noUserImg.jpg">
+  </div>
+  <div class="signedIn main">
+      <div class="firstColumn"> 
+          <div class="editBox"> 
+              <div class="editButtons">
+                <button class="editBoards editButton"><i class="fas fa-clipboard"></i></button>
+                <button class="editPins editButton"><i class="fas fa-thumbtack"></i></button>
+              </div>
+                  <div class="editor">
+                      <h1 class="editorTitle">Board Editor</h1>
+                      <form class="editForm">
+                        <label for="existingBoards">Select a board</label>
+                        <select name="existingBoards" id="existingBoards">
+                          <option value="New">--New Board--</option>
+                          <option value="Test1">Test1</option>
+                          <option value="Test2">Test2</option>
+                          <option value="Test3">Test3</option>
+                        </select><br>
+                        <label for="boardName">Board name:</label>
+                        <input type="text" id="boardName" name="boardName"><br>
+                        <button>Delete Board</button>
+                    </form>
+                  </div>
+          </div>
+      </div>
+      <div class="cardsArea">
+          <div class="cardExample">hi</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">hi</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">hi</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+          <div class="cardExample">h1</div>
+      </div>
+  </div>
+  <div class="footer nav"><b>The internet of <i>  your </i>things</b></div>
+</body>
+</html>

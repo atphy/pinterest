@@ -1,2 +1,147 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+.nav {
+    grid-area: header;
+  }
+  
+.main {
+  grid-area: main;
+  }
+
+.footer {
+  grid-area: footer;
+  padding-left: 10px;
+  }
+
+.nav {
+  background-color: #ff403a;
+  font-family: 'Asap', sans-serif;
+  color: #fdf0e0;
+  }
+
+body {
+    height: 100vh;
+    background-color: #fdf0e0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 8% 88% 4%;
+    grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "footer footer footer footer";
+  }
+
+.navLogo {
+    height: 90%;
+    margin-left: 10px;
+}
+
+.selectedBoard {
+
+}
+
+.acctButtonBox {
+    display: flex;
+    position: absolute;
+    left: 93%;
+    margin: 4px;
+}
+
+.acctButton {
+    background-color: #ff403a;
+    border: solid 3px #fdf0e0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    color: #fdf0e0;
+    text-align: center;
+    font-size: 11px;
+  }
+
+.noUserImg {
+  height: 100%;
+  width: 100%;
+  }
+
+.signedIn {
+    display: flex;
+}
+
+.firstColumn {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    resize: none;
+    font-family: 'Asap', sans-serif;
+}
+  
+.editBox {
+    background-color: #ff403a;
+    height: 95%;
+    width: 95%;
+    border: solid #042A2B 1px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.editButtons {
+    height: 10%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #fdf0e0;
+    border-bottom: solid #042A2B 1px;
+}
+
+.editButton {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    float: left;
+    border: 0px;
+    background-color: #fdf0e0;
+}
+
+.editBoards {
+    border-radius: 24px 0px 0px 0px;
+    border-right: solid #042A2B 1px;
+}
+
+.editPins {
+    border-radius: 0px 24px 0px 0px;
+}
+
+.editorTitle {
+    margin-left: 5px;
+}
+
+.editForm {
+    height: 100%;
+}
+
+.cardsArea {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    flex-flow: row wrap;
+    overflow: auto;
+    overflow-wrap: anywhere;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.cardExample {
+    background-color: #ff403a;
+    height: 300px;
+    width: 350px;
+    border: solid #042A2B 1px;
+    border-radius: 25px;
+    float: left;
+    margin-bottom: 15px;;
+}
+
+.hidden {
+  display: none;
+  }
