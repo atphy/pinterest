@@ -1,6 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import pinCards from '../../components/pinCards/pinCards';
+
 const acctButtonBox = $('#acctButtonBox');
 const signedIn = $('#signedIn');
 const noUser = $('#noUser');
@@ -15,6 +17,8 @@ const checkLoginStatus = () => {
       noUser.addClass('hidden');
       signOut.removeClass('hidden');
       selectedBoard.removeClass('hidden');
+
+      pinCards.buildPins();
     } else {
       acctButtonBox.removeClass('hidden');
       signedIn.addClass('hidden');
