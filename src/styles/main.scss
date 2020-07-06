@@ -4,6 +4,9 @@
 
 .nav {
     grid-area: header;
+    background-color: #ff403a;
+    font-family: 'Asap', sans-serif;
+    color: #fdf0e0;
   }
   
 .main {
@@ -13,12 +16,6 @@
 .footer {
   grid-area: footer;
   padding-left: 10px;
-  }
-
-.nav {
-  background-color: #ff403a;
-  font-family: 'Asap', sans-serif;
-  color: #fdf0e0;
   }
 
 body {
@@ -36,10 +33,6 @@ body {
 .navLogo {
     height: 90%;
     margin-left: 10px;
-}
-
-.selectedBoard {
-
 }
 
 .acctButtonBox {
@@ -71,7 +64,7 @@ body {
 
 .firstColumn {
     display: flex;
-    height: 100%;
+    min-height: 55%;
     width: 25%;
     resize: none;
     font-family: 'Asap', sans-serif;
@@ -79,10 +72,11 @@ body {
   
 .editBox {
     background-color: #ff403a;
-    height: 95%;
+    height: 55%;
     width: 95%;
     border: solid #042A2B 1px;
     border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
     margin: auto;
 }
 
@@ -91,8 +85,7 @@ body {
     width: 100%;
     border-radius: 25px 25px 0px 0px;
     background-color: #fdf0e0;
-    border-bottom: solid #042A2B 1px;
-}
+    }
 
 .editButton {
     height: 100%;
@@ -106,10 +99,26 @@ body {
 .editBoards {
     border-radius: 24px 0px 0px 0px;
     border-right: solid #042A2B 1px;
+    background-color: #ff403a;
+}
+
+.submitEdits {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #15B097;
+}
+
+.deleteButton {
+  background-color: #fdf0e0;
+  font-weight: 700;
+  border: none;
+  color: #ff403a;
+  margin: 30px 0px 5px 0px;
 }
 
 .editPins {
     border-radius: 0px 24px 0px 0px;
+    border-bottom: solid #042A2B 1px;
 }
 
 .editorTitle {
@@ -118,6 +127,9 @@ body {
 
 .editForm {
     height: 100%;
+    background-color: #fdf0e0;
+    padding: 5px;
+    border: solid #ff403a 3px;
 }
 
 .cardsArea {
@@ -133,13 +145,51 @@ body {
 }
 
 .cardExample {
-    background-color: #ff403a;
-    height: 300px;
-    width: 350px;
-    border: solid #042A2B 1px;
+    background-color: #fdf0e0;
+    min-height: 200px;
+    max-height: 350px;
+    min-width: 250px;
+    max-width: 300px;
+    border: solid #ff403a 8px;
     border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
     float: left;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
+}
+
+.cardHeaderImg {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.cardTitleContainer {
+  height: 25%;
+  text-overflow: ellipsis;
+  overflow: scroll auto;
+  overflow-x: auto;
+  padding: 5px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.cardTitle {
+  font-family: 'Asap', sans-serif;
+  font-size: x-large;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff403a;
+  border-radius: 10px;
 }
 
 .hidden {
