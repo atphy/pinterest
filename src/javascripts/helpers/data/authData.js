@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import pinCards from '../../components/pinCards/pinCards';
+import boardOptions from '../../components/boardOptions/boardOptions';
 
 const acctButtonBox = $('#acctButtonBox');
 const signedIn = $('#signedIn');
@@ -21,6 +22,8 @@ const checkLoginStatus = () => {
       editorButton.removeClass('hidden');
 
       pinCards.buildPins();
+      boardOptions.buildBoardsForEditor();
+      boardOptions.buildBoardsForSelector();
     } else {
       acctButtonBox.removeClass('hidden');
       signedIn.addClass('hidden');
