@@ -8,7 +8,7 @@ const buildBoardsForEditor = () => {
       let domString = '<option value="New">--New Board--</option>';
       boards.forEach((board) => {
         domString += `
-        <option value="${board.name}">${board.name}</option>
+        <option value="${board.id}">${board.name}</option>
       `;
       });
       utils.printToDom('#existingBoards', domString);
