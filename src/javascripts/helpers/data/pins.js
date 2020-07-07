@@ -1,8 +1,5 @@
-import axios from 'axios';
-import apiKeys from '../apiKeys.json';
+import utils from '../utils';
 
-const baseUrl = apiKeys.firebaseConfig.databaseURL;
-
-const getPins = () => axios.get(`${baseUrl}/pins.json`);
+const getPins = () => utils.getter('pins');
 
 export default { getPins };
