@@ -16,11 +16,7 @@
         <div class="dropdown" id="boardDropdown">
           <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
           <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Test1</a></li>
-            <li><a href="#">Test2</a></li>
-            <li><a href="#">Test3</a></li>
-          </ul>
+          <ul class="dropdown-menu" id="boardSelector"></ul>
         </div>
     </div>
       <div class="acctButtonBox" id="acctButtonBox"></div>
@@ -42,12 +38,7 @@
                       <h1 class="editorTitle">Board Editor</h1>
                       <form class="editForm">
                         <label for="existingBoards">Select a board</label><br>
-                        <select name="existingBoards" id="existingBoards">
-                          <option value="New">--New Board--</option>
-                          <option value="Test1">Test1</option>
-                          <option value="Test2">Test2</option>
-                          <option value="Test3">Test3</option>
-                        </select><br>
+                        <select name="existingBoards" id="existingBoards"></select><br>
                         <label for="boardName">Board name:</label><br>
                         <input type="text" id="boardName" name="boardName"><br>
                         <button class="submitEdits">Submit</button><br>
@@ -58,12 +49,7 @@
                     <h1 class="editorTitle">Pin Editor</h1>
                     <form class="editForm">
                       <label for="existingBoards">Select a pin</label><br>
-                      <select name="existingBoards" id="existingBoards">
-                        <option value="New">--New Board--</option>
-                        <option value="Test1">Test1</option>
-                        <option value="Test2">Test2</option>
-                        <option value="Test3">Test3</option>
-                      </select><br>
+                      <select name="existingBoards" id="existingBoards"></select><br>
                       <label for="boardName">Board name:</label><br>
                       <input type="text" id="boardName" name="boardName"><br>
                       <button class="submitEdits">Submit</button><br>
