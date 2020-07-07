@@ -1,5 +1,6 @@
 import pinsData from '../../helpers/data/pins';
 import utils from '../../helpers/utils';
+// import boardPinsData from '../../helpers/data/boardPinsData';
 
 import './pinCards.scss';
 
