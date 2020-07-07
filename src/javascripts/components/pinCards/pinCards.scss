@@ -23,6 +23,17 @@
     margin-bottom: 15px;
 }
 
+.deleteCardButton {
+  position: absolute;
+  border-radius: 100%;
+  float: left;
+  align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: xxx-large;
+  border: none;
+  color: #ff403a;
+}
+
 .cardHeaderImg {
   object-fit: cover;
   width: 100%;

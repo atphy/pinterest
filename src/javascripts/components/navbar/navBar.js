@@ -13,10 +13,12 @@ const logoutEvent = () => {
 };
 
 const editor = $('#firstColumn');
+const deleteCard = $('#deleteCardButton');
 
 const editBoxEvent = (e) => {
   e.preventDefault();
   editor.toggleClass('hidden');
+  deleteCard.toggleClass('hidden');
 };
 
 const editorEvent = () => {
