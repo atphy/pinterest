@@ -14,9 +14,9 @@ const init = () => {
   authData.checkLoginStatus();
   auth.loginButton();
   navBar.logoutEvent();
-  navBar.editorEvent();
   editorBox.editorBoardButton();
   editorBox.editorPinsButton();
+  navBar.editorEvent();
 };
 
 init();
