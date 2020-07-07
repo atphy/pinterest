@@ -1,0 +1,33 @@
+.navLogo {
+    height: 56px;
+    margin-left: 10px;
+}
+
+.selectedBoard {
+  align-self: center;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.dropdown {
+  float: right;
+}
+
+.acctButtonBox {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    margin: 1px;
+    height: 56px;
+}
+
+.acctButton {
+    background-color: #ff403a;
+    border: solid 3px #fdf0e0;
+    border-radius: 100%;
+    color: #fdf0e0;
+    text-align: center;
+    font-size: 11px;
+    width: 56px;
+    margin-right: 10px;
+  }

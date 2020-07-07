@@ -8,6 +8,7 @@ const signedIn = $('#signedIn');
 const noUser = $('#noUser');
 const signOut = $('#signOut');
 const selectedBoard = $('#selectedBoard');
+const editorButton = $('#editorButton');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -17,6 +18,7 @@ const checkLoginStatus = () => {
       noUser.addClass('hidden');
       signOut.removeClass('hidden');
       selectedBoard.removeClass('hidden');
+      editorButton.removeClass('hidden');
 
       pinCards.buildPins();
     } else {
@@ -25,6 +27,7 @@ const checkLoginStatus = () => {
       noUser.removeClass('hidden');
       signOut.addClass('hidden');
       selectedBoard.addClass('hidden');
+      editorButton.addClass('hidden');
     }
   });
 };

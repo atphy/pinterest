@@ -1,0 +1,80 @@
+.firstColumn {
+    display: flex;
+    min-height: 55%;
+    width: 25%;
+    resize: none;
+    font-family: 'Asap', sans-serif;
+}
+  
+.editBox {
+    background-color: #ff403a;
+    height: 55%;
+    width: 95%;
+    border: solid #042A2B 1px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 0px 0px 25px 25px;
+    margin: auto;
+}
+
+.editButtons {
+    height: 10%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #fdf0e0;
+    }
+
+.editButton {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    float: left;
+    border: 1px;
+    background-color: #fdf0e0;
+}
+
+.selectedBoardEditor {
+    border-radius: 25px 0px 0px 0px;
+    border-right: solid #042A2B 1px;
+    background-color: #ff403a;
+}
+
+.selectedPinEditor {
+  border-radius: 0px 25px 0px 0px;
+  border-left: solid #042A2B 1px;
+  background-color: #ff403a;
+}
+
+.submitEdits {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #15B097;
+}
+
+.deleteButton {
+  background-color: #fdf0e0;
+  font-weight: 700;
+  border: none;
+  color: #ff403a;
+  margin: 30px 0px 5px 0px;
+}
+
+.deselectedBoardEditor {
+    border-radius: 0px 24px 0px 0px;
+    border-bottom: solid #042A2B 1px;
+}
+
+.deselectedPinEditor {
+  border-radius: 24px 0px 0px 0px;
+  border-bottom: solid #042A2B 1px;
+}
+
+.editorTitle {
+    margin-left: 5px;
+}
+
+.editForm {
+    height: 100%;
+    background-color: #fdf0e0;
+    padding: 5px;
+    border: solid #ff403a 3px;
+}
