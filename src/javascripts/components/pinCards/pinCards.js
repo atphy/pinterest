@@ -1,5 +1,7 @@
 import pins from '../../helpers/data/pins';
 
+import './pinCards.scss';
+
 const buildPins = () => {
   pins.getPins()
     .then((response) => console.error('it works', response.data))

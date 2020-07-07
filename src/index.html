@@ -11,9 +11,9 @@
 <body>
   <div class="nav">
       <img class="navLogo" src="assets/TwinterestLogo.png">
-      <div class="selectedBoard nav hidden" id="selectedBoard">
-        <h3 class="selectedBoardTitle">Test1</h3>
-        <div class="dropdown">
+      <div class="selectedBoard hidden" id="selectedBoard">
+        <h3 class="selectedBoard">Boards</h3>
+        <div class="dropdown" id="boardDropdown">
           <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
           <span class="caret"></span></button>
           <ul class="dropdown-menu">
@@ -24,19 +24,21 @@
         </div>
     </div>
       <div class="acctButtonBox" id="acctButtonBox"></div>
-      <div><button class="acctButton hidden" id="signOut">Sign Out</button></div>
+      <div class="acctButtonBox">
+        <button class="acctButton hidden" id="signOut">Sign Out</button>
+        <button class="acctButton hidden" id="editorButton"><i class="fas fa-edit"></i></button></div>
   </div>
   <div class="noUser main" id='noUser'>
       <img class="noUserImg" src="./assets/noUserImg.jpg">
   </div>
   <div class="signedIn main hidden" id='signedIn'>
-      <div class="firstColumn"> 
+      <div class="firstColumn hidden" id="firstColumn"> 
           <div class="editBox"> 
               <div class="editButtons">
-                <button class="editBoards editButton"><i class="fas fa-clipboard"></i></button>
-                <button class="editPins editButton"><i class="fas fa-thumbtack"></i></button>
+                <button class="editBoards editButton selectedBoardEditor" id="editBoards"><i class="fas fa-clipboard"></i></button>
+                <button class="editPins editButton deselectedPinEditor" id="editPins"><i class="fas fa-thumbtack"></i></button>
               </div>
-                  <div class="editor">
+                  <div class="editor" id="boardEditor">
                       <h1 class="editorTitle">Board Editor</h1>
                       <form class="editForm">
                         <label for="existingBoards">Select a board</label><br>
@@ -52,6 +54,22 @@
                         <button class="deleteButton">Delete Board</button>
                     </form>
                   </div>
+                  <div class="editor hidden" id="pinEditor">
+                    <h1 class="editorTitle">Pin Editor</h1>
+                    <form class="editForm">
+                      <label for="existingBoards">Select a pin</label><br>
+                      <select name="existingBoards" id="existingBoards">
+                        <option value="New">--New Board--</option>
+                        <option value="Test1">Test1</option>
+                        <option value="Test2">Test2</option>
+                        <option value="Test3">Test3</option>
+                      </select><br>
+                      <label for="boardName">Board name:</label><br>
+                      <input type="text" id="boardName" name="boardName"><br>
+                      <button class="submitEdits">Submit</button><br>
+                      <button class="deleteButton">Delete Board</button>
+                  </form>
+                </div>
           </div>
       </div>
       <div class="cardsArea">

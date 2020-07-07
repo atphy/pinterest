@@ -1,57 +1,36 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-
 .nav {
-    grid-area: header;
-    background-color: #ff403a;
-    font-family: 'Asap', sans-serif;
-    color: #fdf0e0;
+  grid-area: header;
+  background-color: #ff403a;
+  font-family: 'Asap', sans-serif;
+  color: #fdf0e0;
+  height: 60px;
+  width: 100%;
   }
   
 .main {
   grid-area: main;
-  }
+}
 
 .footer {
   grid-area: footer;
   padding-left: 10px;
-  }
+  height: 30px;
+}
 
 body {
-    height: 100vh;
-    background-color: #fdf0e0;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 8% 88% 4%;
-    grid-template-areas: 
-      "header header header header"
-      "main main main main"
-      "footer footer footer footer";
-  }
-
-.navLogo {
-    height: 90%;
-    margin-left: 10px;
+  height: 100vh;
+  background-color: #fdf0e0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 8% 88% 4%;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
 }
-
-.acctButtonBox {
-    display: flex;
-    position: absolute;
-    left: 93%;
-    margin: 4px;
-}
-
-.acctButton {
-    background-color: #ff403a;
-    border: solid 3px #fdf0e0;
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    color: #fdf0e0;
-    text-align: center;
-    font-size: 11px;
-  }
 
 .noUserImg {
   height: 100%;
@@ -60,122 +39,6 @@ body {
 
 .signedIn {
     display: flex;
-}
-
-.firstColumn {
-    display: flex;
-    min-height: 55%;
-    width: 25%;
-    resize: none;
-    font-family: 'Asap', sans-serif;
-}
-  
-.editBox {
-    background-color: #ff403a;
-    height: 55%;
-    width: 95%;
-    border: solid #042A2B 1px;
-    border-radius: 25px;
-    box-shadow: 10px 10px 5px grey;
-    margin: auto;
-}
-
-.editButtons {
-    height: 10%;
-    width: 100%;
-    border-radius: 25px 25px 0px 0px;
-    background-color: #fdf0e0;
-    }
-
-.editButton {
-    height: 100%;
-    width: 50%;
-    margin: 0;
-    float: left;
-    border: 0px;
-    background-color: #fdf0e0;
-}
-
-.editBoards {
-    border-radius: 24px 0px 0px 0px;
-    border-right: solid #042A2B 1px;
-    background-color: #ff403a;
-}
-
-.submitEdits {
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: #15B097;
-}
-
-.deleteButton {
-  background-color: #fdf0e0;
-  font-weight: 700;
-  border: none;
-  color: #ff403a;
-  margin: 30px 0px 5px 0px;
-}
-
-.editPins {
-    border-radius: 0px 24px 0px 0px;
-    border-bottom: solid #042A2B 1px;
-}
-
-.editorTitle {
-    margin-left: 5px;
-}
-
-.editForm {
-    height: 100%;
-    background-color: #fdf0e0;
-    padding: 5px;
-    border: solid #ff403a 3px;
-}
-
-.cardsArea {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    flex-flow: row wrap;
-    overflow: auto;
-    overflow-wrap: anywhere;
-    justify-content: space-evenly;
-    padding: 15px;
-}
-
-.cardExample {
-    background-color: #fdf0e0;
-    min-height: 200px;
-    max-height: 350px;
-    min-width: 250px;
-    max-width: 300px;
-    border: solid #ff403a 8px;
-    border-radius: 25px;
-    box-shadow: 10px 10px 5px grey;
-    float: left;
-    margin-bottom: 15px;
-}
-
-.cardHeaderImg {
-  object-fit: cover;
-  width: 100%;
-  height: 75%;
-  border-radius: 17px 17px 0px 0px;
-}
-
-.cardTitleContainer {
-  height: 25%;
-  text-overflow: ellipsis;
-  overflow: scroll auto;
-  overflow-x: auto;
-  padding: 5px;
-  border-radius: 0px 0px 20px 20px;
-}
-
-.cardTitle {
-  font-family: 'Asap', sans-serif;
-  font-size: x-large;
 }
 
 ::-webkit-scrollbar {
@@ -190,6 +53,16 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #ff403a;
   border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #042A2B;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #042A2B;
 }
 
 .hidden {

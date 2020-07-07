@@ -1,0 +1,45 @@
+.cardsArea {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    flex-flow: row wrap;
+    overflow: auto;
+    overflow-wrap: anywhere;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.cardExample {
+    background-color: #fdf0e0;
+    min-height: 200px;
+    max-height: 350px;
+    min-width: 250px;
+    max-width: 300px;
+    border: solid #ff403a 8px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.cardHeaderImg {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.cardTitleContainer {
+  height: 25%;
+  text-overflow: ellipsis;
+  overflow: scroll auto;
+  overflow-x: auto;
+  padding: 5px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.cardTitle {
+  font-family: 'Asap', sans-serif;
+  font-size: x-large;
+}
