@@ -1,11 +1,11 @@
 {
-    "board1": {
-        "name": "board 1"
+    "beachdogs": {
+        "name": "Beach Dogs"
     },
-    "board2": {
-        "name": "board 2"
+    "bikedogs": {
+        "name": "Bike Dogs"
     },
-    "board3": {
-        "name": "board 3"
+    "browndogs": {
+        "name": "Brown Dogs"
     }
 }

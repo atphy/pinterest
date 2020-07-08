@@ -12,7 +12,9 @@ const buildPins = () => {
       pins.forEach((pin) => {
         domString += `
         <div class="cardExample">
-        <button class="deleteCardButton" id="deleteCardButton"><i class="far fa-times-circle"></i></button>
+        <div class="deleteButtonContainer hidden" id="deleteButtonContainer">
+          <button class="deleteCardButton" id="deleteCardButton"><i class="far fa-times-circle"></i></button>
+        </div>
         <a href="${pin.url}">
         <img class="cardHeaderImg" src="${pin.image}">
         <div class="cardTitleContainer">

@@ -1,14 +1,14 @@
 {
     "boardPin1": {
         "pinId": "pin1",
-        "boardId": "board1"
+        "boardId": "bikedogs"
     },
     "boardPin2": {
         "pinId": "pin1",
-        "boardId": "board2"
+        "boardId": "browndogs"
     },
     "boardPin3": {
         "pinId": "pin2",
-        "boardId": "board1"
+        "boardId": "beachdogs"
     }
 }

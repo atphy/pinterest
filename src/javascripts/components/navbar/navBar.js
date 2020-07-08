@@ -13,10 +13,9 @@ const logoutEvent = () => {
 };
 
 const editor = $('#firstColumn');
-const deleteCard = $('#deleteCardButton');
+const deleteCard = $('#deleteButtonContainer');
 
-const editBoxEvent = (e) => {
-  e.preventDefault();
+const editBoxEvent = () => {
   editor.toggleClass('hidden');
   deleteCard.toggleClass('hidden');
 };
