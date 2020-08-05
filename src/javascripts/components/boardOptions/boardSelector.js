@@ -10,7 +10,7 @@ const setSelectedBoardId = (e) => {
 };
 
 const setBoardHeader = () => {
-  if (selectedBoardId === 'all-pins') {
+  if (selectedBoardId === '') {
     utils.printToDom('#selectedBoardHeader', 'All Pins');
   } else {
     boardsData.getSelectedBoardById(selectedBoardId)

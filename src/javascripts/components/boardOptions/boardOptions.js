@@ -20,7 +20,7 @@ const buildBoardsForEditor = () => {
 const buildBoardsForSelector = () => {
   boardsData.getBoards()
     .then((boards) => {
-      let domString = '<li class="boardOptions" id="all-pins">All Pins</li>';
+      let domString = '<li class="boardOptions">All Pins</li>';
       boards.forEach((board) => {
         domString += `
           <li class="boardOptions" value="${board.id}" id="${board.id}">${board.name}</li>
