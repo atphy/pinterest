@@ -16,7 +16,6 @@ const setBoardHeader = () => {
     boardsData.getSelectedBoardById(selectedBoardId)
       .then((response) => {
         const boardName = response.data.name;
-        console.warn(boardName);
         utils.printToDom('#selectedBoardHeader', boardName);
       });
   }
@@ -27,4 +26,4 @@ const displayBoardSelectNameClicker = () => {
   $('.boardOptions').click(setBoardHeader);
 };
 
-export default { displayBoardSelectNameClicker };
+export default { displayBoardSelectNameClicker, selectedBoardId, setBoardHeader };

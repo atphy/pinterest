@@ -27,7 +27,6 @@ const buildNewPins = () => {
 
 const deletePin = (e) => {
   const pinId = e.target.closest('.cardExample').id;
-  console.warn(pinId);
   pinData.deletePin(pinId)
     .then(() => {
       buildNewPins();
