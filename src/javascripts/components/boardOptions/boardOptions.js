@@ -1,10 +1,10 @@
+/* eslint-disable no-console */
 import boardsData from '../../helpers/data/boards';
 import utils from '../../helpers/utils';
 
 const buildBoardsForEditor = () => {
   boardsData.getBoards()
     .then((boards) => {
-      console.warn('it also works', boards);
       let domString = '<option value="New">--New Board--</option>';
       boards.forEach((board) => {
         domString += `
