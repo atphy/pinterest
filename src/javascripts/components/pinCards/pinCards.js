@@ -1,8 +1,6 @@
 /* eslint-disable no-console */
 import pinsData from '../../helpers/data/pins';
 import utils from '../../helpers/utils';
-import navBar from '../navbar/navBar';
-// import boardPinsData from '../../helpers/data/boardPinsData';
 
 import './pinCards.scss';
 
@@ -26,8 +24,6 @@ const buildPins = () => {
       `;
       });
       utils.printToDom('#cardsArea', domString);
-      navBar.editorEvent();
-      navBar.deleteCardsEvent();
     })
     .catch((err) => console.error('broken', err));
 };

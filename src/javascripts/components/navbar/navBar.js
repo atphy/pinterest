@@ -1,6 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import deletePins from '../pinCards/deletePins';
+
 import './navbar.scss';
 
 const logoutUser = (e) => {
@@ -20,14 +22,12 @@ const editBoxEvent = () => {
 
 const deleteCardsToggle = () => {
   $('.deleteButtonContainer').toggleClass('hidden');
+  deletePins.deletePinClick();
 };
 
 const editorEvent = () => {
   $('#editorButton').click(editBoxEvent);
-};
-
-const deleteCardsEvent = () => {
   $('#editorButton').click(deleteCardsToggle);
 };
 
-export default { logoutEvent, editorEvent, deleteCardsEvent };
+export default { logoutEvent, editorEvent };
