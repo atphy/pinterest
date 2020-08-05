@@ -12,15 +12,17 @@
 
 .cardExample {
     background-color: #fdf0e0;
-    min-height: 200px;
-    max-height: 350px;
-    min-width: 250px;
-    max-width: 300px;
+    height: 350px;
+    width: 300px;
     border: solid #ff403a 8px;
     border-radius: 25px;
     box-shadow: 10px 10px 5px grey;
     float: left;
-    margin-bottom: 15px;
+    margin: 5px;
+}
+
+.deleteButtonContainer {
+  position: relative;
 }
 
 .deleteCardButton {
@@ -53,4 +55,8 @@
 .cardTitle {
   font-family: 'Asap', sans-serif;
   font-size: x-large;
+}
+
+.hidden {
+  display: none;
 }

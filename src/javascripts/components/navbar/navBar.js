@@ -13,16 +13,21 @@ const logoutEvent = () => {
 };
 
 const editor = $('#firstColumn');
-const deleteCard = $('#deleteCardButton');
 
-const editBoxEvent = (e) => {
-  e.preventDefault();
+const editBoxEvent = () => {
   editor.toggleClass('hidden');
-  deleteCard.toggleClass('hidden');
+};
+
+const deleteCardsToggle = () => {
+  $('.deleteButtonContainer').toggleClass('hidden');
 };
 
 const editorEvent = () => {
   $('#editorButton').click(editBoxEvent);
 };
 
-export default { logoutEvent, editorEvent };
+const deleteCardsEvent = () => {
+  $('#editorButton').click(deleteCardsToggle);
+};
+
+export default { logoutEvent, editorEvent, deleteCardsEvent };

@@ -8,8 +8,8 @@
   
 .editBox {
     background-color: #ff403a;
-    height: 55%;
-    width: 95%;
+    height: 400px;
+    width: 250px;
     border: solid #042A2B 1px;
     box-shadow: 10px 10px 5px grey;
     border-radius: 0px 0px 25px 25px;
@@ -77,4 +77,8 @@
     background-color: #fdf0e0;
     padding: 5px;
     border: solid #ff403a 3px;
+}
+
+.hidden {
+  display: none;
 }

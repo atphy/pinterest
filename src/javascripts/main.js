@@ -16,7 +16,6 @@ const init = () => {
   navBar.logoutEvent();
   editorBox.editorBoardButton();
   editorBox.editorPinsButton();
-  navBar.editorEvent();
 };
 
 init();
