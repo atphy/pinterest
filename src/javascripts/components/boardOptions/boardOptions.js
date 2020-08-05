@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import boardsData from '../../helpers/data/boards';
 import utils from '../../helpers/utils';
+import boardSelector from './boardSelector';
 
 const buildBoardsForEditor = () => {
   boardsData.getBoards()
@@ -19,13 +20,14 @@ const buildBoardsForEditor = () => {
 const buildBoardsForSelector = () => {
   boardsData.getBoards()
     .then((boards) => {
-      let domString = '';
+      let domString = '<li class="boardOptions" id="all-pins">All Pins</li>';
       boards.forEach((board) => {
         domString += `
-          <li><a href="${board.id}">${board.name}</a></li>
+          <li class="boardOptions" value="${board.id}" id="${board.id}">${board.name}</li>
         `;
       });
       utils.printToDom('#boardSelector', domString);
+      boardSelector.displayBoardSelectNameClicker();
     })
     .catch((err) => console.error('broken', err));
 };

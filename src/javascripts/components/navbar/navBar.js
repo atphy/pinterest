@@ -1,6 +1,10 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import deletePins from '../pinCards/deletePins';
+import deleteBoard from '../boardOptions/deleteBoard';
+import editorBox from '../editorBox/editorBox';
+
 import './navbar.scss';
 
 const logoutUser = (e) => {
@@ -16,18 +20,18 @@ const editor = $('#firstColumn');
 
 const editBoxEvent = () => {
   editor.toggleClass('hidden');
+  editorBox.editBoardDeleteClicker();
 };
 
 const deleteCardsToggle = () => {
   $('.deleteButtonContainer').toggleClass('hidden');
+  deletePins.deletePinClick();
+  deleteBoard.deleteBoardClick();
 };
 
 const editorEvent = () => {
   $('#editorButton').click(editBoxEvent);
-};
-
-const deleteCardsEvent = () => {
   $('#editorButton').click(deleteCardsToggle);
 };
 
-export default { logoutEvent, editorEvent, deleteCardsEvent };
+export default { logoutEvent, editorEvent };

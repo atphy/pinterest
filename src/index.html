@@ -12,7 +12,7 @@
   <div class="nav">
       <img class="navLogo" src="assets/TwinterestLogo.png">
       <div class="selectedBoard hidden" id="selectedBoard">
-        <h3 class="selectedBoard">Boards</h3>
+        <h3 class="selectedBoard" id="selectedBoardHeader">All Pins</h3>
         <div class="dropdown" id="boardDropdown">
           <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
           <span class="caret"></span></button>
@@ -43,7 +43,7 @@
                         <label for="boardName">Board name:</label><br>
                         <input type="text" id="boardName" name="boardName"><br>
                         <button class="submitEdits">Submit</button><br>
-                        <button class="deleteButton">Delete Board</button>
+                        <button class="deleteButton hidden" type="button" id="delete-board">Delete Board</button>
                     </form>
                   </div>
                   <div class="editor hidden" id="pinEditor">
