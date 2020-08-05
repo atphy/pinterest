@@ -7,8 +7,12 @@ const baseUrl = apiKeys.firebaseConfig.databaseURL;
 
 const getBoards = () => utils.getter('boards');
 
+const addNewBoard = (newBoardObj) => axios.post(`${baseUrl}/boards.json`, newBoardObj);
+
 const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
 
 const getSelectedBoardById = (id) => axios.get(`${baseUrl}/boards/${id}.json`);
 
-export default { getBoards, deleteBoard, getSelectedBoardById };
+export default {
+  getBoards, deleteBoard, getSelectedBoardById, addNewBoard,
+};

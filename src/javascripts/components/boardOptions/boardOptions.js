@@ -6,7 +6,7 @@ import boardSelector from './boardSelector';
 const buildBoardsForEditor = () => {
   boardsData.getBoards()
     .then((boards) => {
-      let domString = '<option value="New">--New Board--</option>';
+      let domString = '<option value="">--New Board--</option>';
       boards.forEach((board) => {
         domString += `
         <option value="${board.id}">${board.name}</option>
@@ -20,7 +20,7 @@ const buildBoardsForEditor = () => {
 const buildBoardsForSelector = () => {
   boardsData.getBoards()
     .then((boards) => {
-      let domString = '<li class="boardOptions" id="all-pins">All Pins</li>';
+      let domString = '<li class="boardOptions">All Pins</li>';
       boards.forEach((board) => {
         domString += `
           <li class="boardOptions" value="${board.id}" id="${board.id}">${board.name}</li>
