@@ -2,6 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import deletePins from '../pinCards/deletePins';
+import deleteBoard from '../boardOptions/deleteBoard';
+import editorBox from '../editorBox/editorBox';
 
 import './navbar.scss';
 
@@ -18,11 +20,13 @@ const editor = $('#firstColumn');
 
 const editBoxEvent = () => {
   editor.toggleClass('hidden');
+  editorBox.editBoardDeleteClicker();
 };
 
 const deleteCardsToggle = () => {
   $('.deleteButtonContainer').toggleClass('hidden');
   deletePins.deletePinClick();
+  deleteBoard.deleteBoardClick();
 };
 
 const editorEvent = () => {

@@ -33,4 +33,16 @@ const editorPinsButton = () => {
   $('#editPins').click(editPinsEvent);
 };
 
-export default { editorBoardButton, editorPinsButton };
+const editBoardDeleteChecker = () => {
+  if ($('#existingBoards').val()) {
+    $('#delete-board').removeClass('hidden');
+  } else {
+    $('#delete-board').addClass('hidden');
+  }
+};
+
+const editBoardDeleteClicker = () => {
+  $('#existingBoards').change(editBoardDeleteChecker);
+};
+
+export default { editorBoardButton, editorPinsButton, editBoardDeleteClicker };
