@@ -1,3 +1,6 @@
+import pinOptions from '../pinCards/pinOptions';
+import editPin from '../pinCards/editPin';
+
 import './editorBox.scss';
 
 const editBoards = $('#editBoards');
@@ -27,6 +30,9 @@ const editPinsEvent = (e) => {
   editBoards.addClass('deselectedBoardEditor');
   boardEditor.addClass('hidden');
   pinEditor.removeClass('hidden');
+  pinOptions.buildPinsForEditor();
+  editPin.pinEditSelectorChanged();
+  editPin.updateEditedPinListener();
 };
 
 const editorPinsButton = () => {
