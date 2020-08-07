@@ -15,8 +15,6 @@ const addNewBoard = () => {
 const newBoardSelector = () => {
   if ($('#existingBoards').val() === '') {
     $('#submit-board').click(addNewBoard);
-  } else {
-    console.warn('or here?');
   }
 };
 

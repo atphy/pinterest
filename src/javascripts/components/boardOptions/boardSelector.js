@@ -21,9 +21,16 @@ const setBoardHeader = () => {
   }
 };
 
+const setEditBoxValue = () => {
+  $('#existingBoards').val(selectedBoardId);
+};
+
 const displayBoardSelectNameClicker = () => {
   $('.boardOptions').click(setSelectedBoardId);
   $('.boardOptions').click(setBoardHeader);
+  $('.boardOptions').click(setEditBoxValue);
 };
 
-export default { displayBoardSelectNameClicker, selectedBoardId, setBoardHeader };
+export default {
+  displayBoardSelectNameClicker, selectedBoardId, setBoardHeader,
+};

@@ -5,7 +5,7 @@ const addNewPin = () => {
   const newPinObj = {
     name: $('#pinName').val(),
     image: $('#pinImg').val(),
-    url: $('pinLink').val(),
+    url: $('#pinLink').val(),
   };
   pinData.addNewPin(newPinObj)
     .then(() => {
