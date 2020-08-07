@@ -6,6 +6,7 @@ import deleteBoard from '../boardOptions/deleteBoard';
 import editorBox from '../editorBox/editorBox';
 import newBoard from '../boardOptions/newBoard';
 import newPin from '../pinCards/newPin';
+import editBoard from '../boardOptions/editBoard';
 
 import './navbar.scss';
 
@@ -25,6 +26,7 @@ const editBoxEvent = () => {
   editorBox.editBoardDeleteClicker();
   newBoard.newBoardSelector();
   newPin.newPinSelector();
+  editBoard.updateEditedBoardListener();
 };
 
 const deleteCardsToggle = () => {
@@ -36,6 +38,7 @@ const deleteCardsToggle = () => {
 const editorEvent = () => {
   $('#editorButton').click(editBoxEvent);
   $('#editorButton').click(deleteCardsToggle);
+  $('#editorButton').click(editBoard.boardEditSelectorChanged);
 };
 
 export default { logoutEvent, editorEvent };
