@@ -1,6 +1,7 @@
 import pinOptions from '../pinCards/pinOptions';
 import editPin from '../pinCards/editPin';
 import newPin from '../pinCards/newPin';
+import addOrEditBoard from '../boardOptions/addOrEditBoard';
 
 import './editorBox.scss';
 
@@ -17,6 +18,7 @@ const editBoardEvent = (e) => {
   editPins.addClass('deselectedPinEditor');
   boardEditor.removeClass('hidden');
   pinEditor.addClass('hidden');
+  addOrEditBoard.addOrEditBoard();
 };
 
 const editorBoardButton = () => {
