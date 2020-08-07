@@ -15,6 +15,7 @@ const setBoardHeader = () => {
   } else {
     boardsData.getSelectedBoardById(selectedBoardId)
       .then((response) => {
+        console.warn(response);
         const boardName = response.data.name;
         utils.printToDom('#selectedBoardHeader', boardName);
       });

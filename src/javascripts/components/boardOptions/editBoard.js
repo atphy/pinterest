@@ -1,5 +1,6 @@
 import boardData from '../../helpers/data/boards';
 import boardOptions from './boardOptions';
+import boardSelector from './boardSelector';
 
 const editBoardForm = () => {
   boardData.getBoardById($('#existingBoards').val())
@@ -17,6 +18,7 @@ const updateEditedBoard = () => {
     .then(() => {
       boardOptions.buildBoardsForEditor();
       boardOptions.buildBoardsForSelector();
+      boardSelector.setBoardHeader();
     });
 };
 
