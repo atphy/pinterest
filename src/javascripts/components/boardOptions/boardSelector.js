@@ -27,6 +27,13 @@ const displayBoardSelectNameClicker = () => {
   $('.boardOptions').click(setSelectedBoardId);
   $('.boardOptions').click(setBoardHeader);
   $('.boardOptions').click(setEditBoxValue);
+  $('.boardOptions').on('click', () => {
+    if ($('#existingBoards').val()) {
+      $('#delete-board').removeClass('hidden');
+    } else {
+      $('#delete-board').addClass('hidden');
+    }
+  });
 };
 
 export default {
