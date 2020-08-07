@@ -27,9 +27,12 @@ const updateEditedBoardListener = () => {
 };
 
 const boardEditSelectorChanged = () => {
+  $('.boardOptions').on('click', () => {
+    editBoardForm();
+  });
   $('#existingBoards').on('change', () => {
     editBoardForm();
   });
 };
 
-export default { boardEditSelectorChanged, updateEditedBoardListener };
+export default { boardEditSelectorChanged, updateEditedBoardListener, editBoardForm };

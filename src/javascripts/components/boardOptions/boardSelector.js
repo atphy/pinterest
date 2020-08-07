@@ -1,8 +1,6 @@
 import boardsData from '../../helpers/data/boards';
 import utils from '../../helpers/utils';
 
-// import utils from '../../helpers/utils';
-
 let selectedBoardId = '';
 
 const setSelectedBoardId = (e) => {
@@ -15,7 +13,6 @@ const setBoardHeader = () => {
   } else {
     boardsData.getSelectedBoardById(selectedBoardId)
       .then((response) => {
-        console.warn(response);
         const boardName = response.data.name;
         utils.printToDom('#selectedBoardHeader', boardName);
       });
