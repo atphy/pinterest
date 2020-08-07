@@ -1,3 +1,7 @@
+import pinOptions from '../pinCards/pinOptions';
+import editPin from '../pinCards/editPin';
+import newPin from '../pinCards/newPin';
+
 import './editorBox.scss';
 
 const editBoards = $('#editBoards');
@@ -19,6 +23,20 @@ const editorBoardButton = () => {
   $('#editBoards').click(editBoardEvent);
 };
 
+const addOrEditPin = () => {
+  newPin.newPinSelector();
+  $('#existingPins').on('change', () => {
+    if (!$('#existingPins').val()) {
+      $('#submit-pin').off();
+      newPin.newPinSelector();
+    } else {
+      $('#submit-pin').off();
+      editPin.updateEditedPinListener();
+      editPin.pinEditSelectorChanged();
+    }
+  });
+};
+
 const editPinsEvent = (e) => {
   e.preventDefault();
   editPins.addClass('selectedPinEditor');
@@ -27,6 +45,9 @@ const editPinsEvent = (e) => {
   editBoards.addClass('deselectedBoardEditor');
   boardEditor.addClass('hidden');
   pinEditor.removeClass('hidden');
+  pinOptions.buildPinsForEditor();
+  editPin.pinEditSelectorChanged();
+  addOrEditPin();
 };
 
 const editorPinsButton = () => {

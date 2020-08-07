@@ -1,5 +1,6 @@
 import pinData from '../../helpers/data/pins';
 import pinCards from './pinCards';
+import pinOptions from './pinOptions';
 
 const addNewPin = () => {
   const newPinObj = {
@@ -10,7 +11,9 @@ const addNewPin = () => {
   pinData.addNewPin(newPinObj)
     .then(() => {
       pinCards.buildPins();
+      pinOptions.buildPinsForEditor();
     });
+  $('.deleteButtonContainer').removeClass('hidden');
 };
 
 const newPinSelector = () => {

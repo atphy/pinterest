@@ -1,8 +1,6 @@
 import boardsData from '../../helpers/data/boards';
 import utils from '../../helpers/utils';
 
-// import utils from '../../helpers/utils';
-
 let selectedBoardId = '';
 
 const setSelectedBoardId = (e) => {
