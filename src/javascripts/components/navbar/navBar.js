@@ -5,7 +5,6 @@ import deletePins from '../pinCards/deletePins';
 import deleteBoard from '../boardOptions/deleteBoard';
 import editorBox from '../editorBox/editorBox';
 import newBoard from '../boardOptions/newBoard';
-import newPin from '../pinCards/newPin';
 import editBoard from '../boardOptions/editBoard';
 
 import './navbar.scss';
@@ -25,7 +24,6 @@ const editBoxEvent = () => {
   editor.toggleClass('hidden');
   editorBox.editBoardDeleteClicker();
   newBoard.newBoardSelector();
-  newPin.newPinSelector();
   editBoard.updateEditedBoardListener();
 };
 

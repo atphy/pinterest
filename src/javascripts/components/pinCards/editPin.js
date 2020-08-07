@@ -1,5 +1,6 @@
 import pinData from '../../helpers/data/pins';
 import pinCards from './pinCards';
+import pinOptions from './pinOptions';
 
 const editPinForm = () => {
   pinData.getPinById($('#existingPins').val())
@@ -20,8 +21,8 @@ const updateEditedPin = () => {
   pinData.updatePin(pinId, updatedPin)
     .then(() => {
       pinCards.buildPins();
+      pinOptions.buildPinsForEditor();
     });
-  $('.deleteButtonContainer').toggleClass('hidden');
 };
 
 const updateEditedPinListener = () => {
